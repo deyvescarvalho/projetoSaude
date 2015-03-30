@@ -84,8 +84,8 @@ a{
 
 .subTitleService{
     font-size: 1.4em;
-    text-align: center;
-    display: block;
+    text-align: center !important;
+    /*display: block;*/
     margin: 10px 0;
 }
 
