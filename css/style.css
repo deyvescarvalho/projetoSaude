@@ -82,6 +82,10 @@ a{
     overflow: hidden !important;
 }
 
+.espService{
+    overflow: hidden !important;
+}
+
 .subTitleService{
     font-size: 1.4em;
     text-align: center !important;
