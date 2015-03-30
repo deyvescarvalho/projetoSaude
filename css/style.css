@@ -15,6 +15,8 @@ nav{
     text-align: center;
     /*margin: 0 !important;*/
     /*padding: 0 !important;*/
+    position: fixed !important;
+    z-index: 999999;
 
 }
 
@@ -45,11 +47,15 @@ li{
     -webkit-border-radius: 20px;
     border-radius: 20px;
 }
-a{
+.linkMenu{
     color: #ffffff !important;
 }
 
-a:hover {
+a{
+    text-decoration: none!important;
+}
+
+.linkMenu:hover {
     text-decoration: none !important;
     color: #6a6a6a !important;
     transition: 1s;
@@ -63,12 +69,17 @@ a:hover {
 
 /*Serviços*/
 
-.imgService{
-    background: red;
+.services{
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.imgService .imgFtoServices{
+    /*background: red;*/
     height: 260px;
     -webkit-border-radius: 100px;
     border-radius: 30%;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .subTitleService{
@@ -77,6 +88,22 @@ a:hover {
     display: block;
     margin: 10px 0;
 }
+
+.linkServico{
+    color: #757575;
+}
+
+.linkServico:hover{
+    color: #0f0f0f;
+}
+
+.linkFtoService:hover .imgService{
+    opacity: .8;
+    /*border-radius: 50%;*/
+    transition-duration: 1s;
+}
+
+
 
 
 
