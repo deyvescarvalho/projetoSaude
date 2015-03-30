@@ -61,6 +61,22 @@ a:hover {
     margin: 5px auto;
 }
 
+/*Serviços*/
+
+.imgService{
+    background: red;
+    height: 260px;
+    -webkit-border-radius: 100px;
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+.subTitleService{
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
 
 
 
