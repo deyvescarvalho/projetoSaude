@@ -11,8 +11,10 @@
 }
 
 nav{
-    background: #f1efeb;
+    background-color: rgba(241,239,235,.7);
     text-align: center;
+    opacity: .9;
+
     /*margin: 0 !important;*/
     /*padding: 0 !important;*/
     position: fixed !important;
@@ -149,6 +151,12 @@ input{
 textarea{
     resize: none;
 
+}
+
+.rodape{
+    /*background: #f1efeb;*/
+    margin-top: 20px!important;
+    background-color: rgba(241,239,235,.6);
 }
 
 
