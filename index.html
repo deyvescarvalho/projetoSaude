@@ -5,6 +5,7 @@
     <title>Clinica da Saúde</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="container-fluid">
@@ -71,20 +72,23 @@
     </section>
 
     <footer class="rodape col-md-12">
-        <div class="col-md-5 logo col-md-offset-2"></div>
-        <div class="col-md-5 formContato ">
+        <div class="col-md-2 logo "></div>
+        <div class="col-md-5"></div>
+        <div class="col-md-3  formContato ">
             <form action="">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome"/>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email"/>
-                <label for="telefone">Telefone:</label>
-                <input type="text" name="telefone" id="telefone"/>
-                <textarea name="campoinfo" id="infos" cols="20" rows="10"></textarea>
+                <!--<label class="lbltext" for="nome">Nome:</label>-->
+                <input required="" placeholder="Nome" type="text" name="nome" id="nome" class="form-control"/>
+                <!--<label class="lbltext" for="email">E-mail:</label>-->
+                <input required="" placeholder="E-mail" type="email" name="email" id="email" class="form-control"/>
+                <!--<label class="lbltext" for="telefone">Telefone:</label>-->
+                <input required="" placeholder="Telefone" type="text" name="telefone" id="telefone" class="form-control"/>
+                <!--<label class="lbltext" for="telefone">Mensagem:</label>-->
+                <textarea required="" placeholder="Mensagem" name="campoinfo" id="infos" class="form-control" cols="20" rows="3"></textarea>
+                <button type="reset" class="btn btn-default">Limpar</button>
+                <button type="submit" class="btn btn-default">Enviar</button>
             </form>
         </div>
     </footer>
-
 </div>
 
 <script src="js/jquery-1.11.2.min.js"></script>

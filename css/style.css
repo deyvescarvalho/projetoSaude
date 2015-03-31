@@ -118,11 +118,37 @@ a{
 /*FORMULARIO*/
 
 .formContato{
-    background: red;
+    /*background: red;*/
+}
+
+.txts{
+    width: 360px;
+}
+
+.lbltext{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    margin: 5px 0;
 }
 
 .logo{
-    
+    width: 100%;
+    height: auto;
+    background: url("../img/slider/0007.jpg");
+}
+
+button{
+    margin: 10px 2px !important;
+    float: right;
+}
+
+input{
+    margin: 8px 0 !important;
+}
+
+textarea{
+    resize: none;
+
 }
 
 
