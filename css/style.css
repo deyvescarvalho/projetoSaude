@@ -27,7 +27,7 @@ ul{
     margin: 0 auto !important;
 
 }
-h1{
+.titleEfeito{
     text-align: center;
     color: #e9eae1 !important;
     text-shadow: 1px 1px 3px #373737;
@@ -105,6 +105,13 @@ a{
     opacity: .8;
     /*border-radius: 50%;*/
     transition-duration: 1s;
+}
+
+
+/*EQUIPE*/
+
+.equipe{
+    margin: 15px 0;
 }
 
 
