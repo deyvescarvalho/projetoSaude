@@ -22,7 +22,7 @@ nav{
 
 }
 
-ul{
+.ulMenu{
     list-style: none;
     /*background: blue;*/
     padding: 0 !important;
@@ -34,7 +34,7 @@ ul{
     color: #e9eae1 !important;
     text-shadow: 1px 1px 3px #373737;
 }
-li{
+.liMenu{
     display: inline-block;
     background: #ebf1f6; /* Old browsers */
     background: -moz-linear-gradient(top,  #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); /* FF3.6+ */
@@ -67,6 +67,33 @@ a{
 
 .slider{
     margin: 5px auto;
+    padding: 0;
+
+    box-shadow: none !important;
+}
+
+.bxslider li {
+    background: #ffffff !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.bxslider{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.bx-viewport{
+    margin: 0 !important;
+    padding: 0!important;
+    width: 100%;
+}
+
+.imgsSliders{
+    padding: 0 !important;
+    margin: 0 auto !important;
 }
 
 /*Serviços*/
