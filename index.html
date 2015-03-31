@@ -5,6 +5,7 @@
     <title>Clinica da Saúde</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -25,7 +26,11 @@
     </div>
     <h1 class="titleEfeito">AQUI O SEU BEM-ESTAR, É NOSSA PRIORIDADE!</h1>
     <section class="slider col-md-12">
-        <img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" alt=""/>
+        <ul class="bxslider">
+            <li><img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" /></li>
+            <li><img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" /></li>
+        </ul>
+
     </section>
     <h2 class="titleEfeito">CONHEÇA NOSSOS SERVIÇOS!</h2>
     <section class="services col-md-12">
@@ -96,7 +101,41 @@
     </footer>
 </div>
 
+
+<p><a href="" id="slider-next">Click me to go to the next slide</a><br />
+    <a href="" id="slider-count">Click me to see the total slide count</a></p>
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="bxslider/jquery.bxslider.js"></script>
+
+<script>
+    var slider = jQuery('.bxslider').bxSlider({
+        auto: true,
+        pause: 5000,
+        infiniteLoop: true,
+        speed: 1800,
+        slideMargin: 0,
+        startSlide: 0,
+        randomStart: true,
+        adaptiveHeightSpeed: 500,
+        useCSS: true,
+        responsive: true,
+        mode: 'fade'
+
+    });
+
+    jQuery('#slider-next').click(function(){
+        slider.goToNextSlide();
+        return false;
+    });
+
+    jQuery('#slider-count').click(function(){
+        var count = slider.getSlideCount();
+        alert('Slide count: ' + count);
+        return false;
+    });
+</script>
+
 </body>
 </html>
