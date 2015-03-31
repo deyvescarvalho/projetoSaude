@@ -15,11 +15,11 @@
             <img class="logoClinica" src="img/slider/logo.png" alt=""/>
             <nav class="col-md-12">
                 <ul class="ulMenu">
-                    <li class="liMenu"><a class="linkMenu" href="#">INÍCIO</a></li>
-                    <li class="liMenu"><a class="linkMenu" href="#">SERVIÇOS</a></li>
-                    <li class="liMenu"><a class="linkMenu" href="#">EQUIPE</a></li>
-                    <li class="liMenu"><a class="linkMenu" href="#">FOTOS</a></li>
-                    <li class="liMenu"><a class="linkMenu" href="#">CONTATO</a></li>
+                    <li class="liMenu"><a id="inicio" class="linkMenu" href="#">INÍCIO</a></li>
+                    <li class="liMenu"><a id="servicos" class="linkMenu" href="#">SERVIÇOS</a></li>
+                    <li class="liMenu"><a id="equipe" class="linkMenu" href="#">EQUIPE</a></li>
+                    <li class="liMenu"><a id="fotos" class="linkMenu" href="#">FOTOS</a></li>
+                    <li class="liMenu"><a id="contato" class="linkMenu" href="#">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
@@ -126,6 +126,40 @@
         var count = slider.getSlideCount();
         alert('Slide count: ' + count);
         return false;
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery("#inicio").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (0)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#servicos").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (890)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#equipe").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (1300)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#contato").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (1500)
+            }, 2000);
+        });
     });
 </script>
 </body>
