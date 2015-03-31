@@ -1,7 +1,7 @@
 /*HEADER*/
 
 .cabecalho{
-    background: url("../img/capa/capa.jpg");
+    background: url("../img/slider/capa.jpg");
     width: 100%;
     height: 400px;
     margin: 0 !important;
@@ -21,6 +21,10 @@ nav{
     z-index: 999999;
 
 }
+.logoClinica{
+    position: absolute;top: 65px;
+}
+
 
 .ulMenu{
     list-style: none;
@@ -181,9 +185,9 @@ textarea{
 }
 
 .rodape{
-    /*background: #f1efeb;*/
+    background: #f1efeb;
     margin-top: 20px!important;
-    background-color: rgba(241,239,235,.6);
+    /*background-color: rgba(241,239,235,.6);*/
 }
 
 
