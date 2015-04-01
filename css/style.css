@@ -64,7 +64,12 @@ a{
 .linkMenu:hover {
     text-decoration: none !important;
     color: #6a6a6a !important;
-    transition: 1s;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s ease-in-out;
+
 }
 
 /*SLIDER*/
@@ -132,26 +137,35 @@ a{
 
 .linkServico:hover{
     color: #0f0f0f;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .linkFtoService:hover .imgService{
     opacity: .8;
-    /*border-radius: 50%;*/
-    transition-duration: 1s;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
 }
 
 
 /*EQUIPE*/
 
 .equipe{
-    margin: 15px 0;
+    margin: 15px 0 0 0;
 }
 
 
 /*FORMULARIO*/
 
 .formContato{
-    /*background: red;*/
+   margin-top: 12px;
 }
 
 .txts{
@@ -165,9 +179,7 @@ a{
 }
 
 .logo{
-    width: 100%;
-    height: auto;
-    background: url("../img/slider/0007.jpg");
+    margin-top: 20px;
 }
 
 button{
@@ -184,11 +196,31 @@ textarea{
 
 }
 
+/*RODAPÉ*/
+
 .rodape{
     background: #f1efeb;
-    margin-top: 20px!important;
-    /*background-color: rgba(241,239,235,.6);*/
+margin: 0;
+    padding: 0;
 }
+
+.divEdenreco{
+    text-align: center;
+}
+
+.divEdenreco h2{
+    font-size: 1.7em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: #385571;
+}
+
+.divEdenreco p{
+    color: #555555;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.6em;
+}
+
 
 
 

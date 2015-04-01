@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="container-fluid">
@@ -41,7 +42,7 @@
                     <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
                 </div></a>
             <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">Lorem ipsum dolor sit.</h2>
+                <h2 class="col-md-12 subTitleService">PSICÓLOGO</h2>
             </a>
         </article>
         <article class="espService col-md-4">
@@ -50,7 +51,7 @@
                     <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
                 </div></a>
             <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">Lorem ipsum dolor sit.</h2>
+                <h2 class="col-md-12 subTitleService">CLÍNICO GERAL</h2>
             </a>
         </article>
         <article class="espService col-md-4">
@@ -59,7 +60,7 @@
                     <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
                 </div></a>
             <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">Lorem ipsum dolor sit.</h2>
+                <h2 class="col-md-12 subTitleService">CARDIOLOGISTA</h2>
             </a>
         </article>
     </section>
@@ -81,13 +82,13 @@
         <div class="col-md-2 logo ">
             <img class="logoRodape" src="img/slider/logo_rodape.png" alt=""/>
         </div>
-        <div class="col-md-5">
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor.</p>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor.</p>
+        <div class="divEdenreco col-md-5 col-md-offset-1">
+            <h2>TELEFONE</h2>
+            <p>(64) 3631-0123</p>
+            <h2>ENDEREÇO</h2>
+            <p>Rua fulado de tal nº 1234 / Jataí-GO</p>
         </div>
-        <div class="col-md-3  formContato ">
+        <div class="col-md-3 col-md-offset-1  formContato ">
             <form action="">
                 <!--<label class="lbltext" for="nome">Nome:</label>-->
                 <input required="" placeholder="Nome" type="text" name="nome" id="nome" class="form-control"/>
@@ -109,10 +110,12 @@
 <script>
     var slider = jQuery('.bxslider').bxSlider({
         auto: true,
-        pause: 5000,
+        pause: 2500,
         infiniteLoop: true,
         speed: 1800,
         responsive: true,
+        pager: false,
+        controls: false,
         mode: 'fade'
 
     });
@@ -149,7 +152,7 @@
     jQuery(document).ready(function() {
         jQuery("#equipe").click(function() {
             jQuery('html, body').animate({
-                scrollTop: (1300)
+                scrollTop: (1200)
             }, 2000);
         });
     });
