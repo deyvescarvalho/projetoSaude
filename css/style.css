@@ -1,7 +1,227 @@
 /*HEADER*/
 
-
 .cabecalho{
+    background: url("../img/slider/capa.jpg");
+    width: 100%;
+    height: 400px;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-box-shadow: 2px 2px 2px 2px #999999;
+    box-shadow: 2px 2px 2px 2px #999999;
+}
+
+nav{
+    background-color: rgba(241,239,235,.7);
+    text-align: center;
+    opacity: .9;
+
+    /*margin: 0 !important;*/
+    /*padding: 0 !important;*/
+    position: fixed !important;
+    z-index: 999999;
+
+}
+.logoClinica{
+    position: absolute;top: 65px;
+}
+
+
+.ulMenu{
+    list-style: none;
+    /*background: blue;*/
+    padding: 0 !important;
+    margin: 0 auto !important;
+
+}
+.titleEfeito{
+    text-align: center;
+    color: #e9eae1 !important;
+    text-shadow: 1px 1px 3px #373737;
+}
+.liMenu{
+    display: inline-block;
+    background: #ebf1f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+    padding: 15px 20px;
+    font-size: 1.4em;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.linkMenu{
+    color: #ffffff !important;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+.linkMenu:hover {
+    text-decoration: none !important;
+    color: #6a6a6a !important;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s ease-in-out;
+
+}
+
+/*SLIDER*/
+
+.slider{
+    margin: 5px auto;
+    padding: 0;
+
+    box-shadow: none !important;
+}
+
+.bxslider li {
+    background: #ffffff !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.bxslider{
     width: 100%;
     height: auto;
+    padding: 0;
+    margin: 0;
 }
+
+.bx-viewport{
+    margin: 0 !important;
+    padding: 0!important;
+    width: 100%;
+}
+
+.imgsSliders{
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/*Serviços*/
+
+.services{
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.imgService .imgFtoServices{
+    /*background: red;*/
+    height: 260px;
+    -webkit-border-radius: 100px;
+    border-radius: 30%;
+    overflow: hidden !important;
+}
+
+.espService{
+    overflow: hidden !important;
+}
+
+.subTitleService{
+    font-size: 1.4em;
+    text-align: center !important;
+    /*display: block;*/
+    margin: 10px 0;
+}
+
+.linkServico{
+    color: #757575;
+}
+
+.linkServico:hover{
+    color: #0f0f0f;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.linkFtoService:hover .imgService{
+    opacity: .8;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+}
+
+
+/*EQUIPE*/
+
+.equipe{
+    margin: 15px 0 0 0;
+}
+
+
+/*FORMULARIO*/
+
+.formContato{
+   margin-top: 12px;
+}
+
+.txts{
+    width: 360px;
+}
+
+.lbltext{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+button{
+    margin: 10px 2px !important;
+    float: right;
+}
+
+input{
+    margin: 8px 0 !important;
+}
+
+textarea{
+    resize: none;
+
+}
+
+/*RODAPÉ*/
+
+.rodape{
+    background: #f1efeb;
+margin: 0;
+    padding: 0;
+}
+
+.divEdenreco{
+    text-align: center;
+}
+
+.divEdenreco h2{
+    font-size: 1.7em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: #385571;
+}
+
+.divEdenreco p{
+    color: #555555;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.6em;
+}
+
+
+
+
+

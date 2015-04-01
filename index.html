@@ -5,26 +5,165 @@
     <title>Clinica da Saúde</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <img src="img/capa/capa.jpg" alt=""/>
         <header class="col-md-12 cabecalho">
+            <img class="logoClinica" src="img/slider/logo.png" alt=""/>
             <nav class="col-md-12">
-                <ul>
-                    <li><a href="#">INÍCIO</a></li>
-                    <li><a href="#">SERVIÇOS</a></li>
-                    <li><a href="#">EQUIPE</a></li>
-                    <li><a href="#">FOTOS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                <ul class="ulMenu">
+                    <li class="liMenu"><a id="inicio" class="linkMenu" href="#">INÍCIO</a></li>
+                    <li class="liMenu"><a id="servicos" class="linkMenu" href="#">SERVIÇOS</a></li>
+                    <li class="liMenu"><a id="equipe" class="linkMenu" href="#">EQUIPE</a></li>
+                    <li class="liMenu"><a id="fotos" class="linkMenu" href="#">FOTOS</a></li>
+                    <li class="liMenu"><a id="contato" class="linkMenu" href="#">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-</div>
+    <h1 class="titleEfeito">AQUI O SEU BEM-ESTAR, É NOSSA PRIORIDADE!</h1>
+    <section class="slider col-md-12">
+        <ul class="bxslider col-md-12">
+            <li class="col-md-12"><img class="imgsSliders" src="img/slider/bh_011.jpg" /></li>
+            <li class="col-md-12"><img class="imgsSliders" src="img/slider/slider1.jpg" /></li>
+            <li><img class="imgsSliders" src="img/slider/slider2.png" /></li>
 
+        </ul>
+    </section>
+    <h2 class="titleEfeito">CONHEÇA NOSSOS SERVIÇOS!</h2>
+    <section class="services col-md-12">
+        <article class="espService col-md-4">
+            <a class="linkFtoService" href="#">
+                <div class="imgService col-md-12">
+                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
+                </div></a>
+            <a class="linkServico" href="#">
+                <h2 class="col-md-12 subTitleService">PSICÓLOGO</h2>
+            </a>
+        </article>
+        <article class="espService col-md-4">
+            <a class="linkFtoService" href="#">
+                <div class="imgService col-md-12">
+                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
+                </div></a>
+            <a class="linkServico" href="#">
+                <h2 class="col-md-12 subTitleService">CLÍNICO GERAL</h2>
+            </a>
+        </article>
+        <article class="espService col-md-4">
+            <a class="linkFtoService" href="#">
+                <div class="imgService col-md-12">
+                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
+                </div></a>
+            <a class="linkServico" href="#">
+                <h2 class="col-md-12 subTitleService">CARDIOLOGISTA</h2>
+            </a>
+        </article>
+    </section>
+    <section class="equipe col-md-12">
+        <div class="fotoEquipe col-md-5">
+            <img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" alt=""/>
+        </div>
+        <article class="col-md-6 col-md-offset-1 description">
+            <h2 class="titleEfeito">SAIBA TUDO SOBRE NOSSA EQUIPE.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad doloremque repellendus.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolorem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi assumenda, commodi corporis cum cumque, dolorem ducimus esse explicabo, fugiat iusto laborum libero molestias nihil nulla placeat qui. Cupiditate, similique.30</p>
+        </article>
+    </section>
+
+    <footer class="rodape col-md-12">
+        <div class="col-md-2 logo ">
+            <img class="logoRodape" src="img/slider/logo_rodape.png" alt=""/>
+        </div>
+        <div class="divEdenreco col-md-5 col-md-offset-1">
+            <h2>TELEFONE</h2>
+            <p>(64) 3631-0123</p>
+            <h2>ENDEREÇO</h2>
+            <p>Rua fulado de tal nº 1234 / Jataí-GO</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1  formContato ">
+            <form action="">
+                <!--<label class="lbltext" for="nome">Nome:</label>-->
+                <input required="" placeholder="Nome" type="text" name="nome" id="nome" class="form-control"/>
+                <!--<label class="lbltext" for="email">E-mail:</label>-->
+                <input required="" placeholder="E-mail" type="email" name="email" id="email" class="form-control"/>
+                <!--<label class="lbltext" for="telefone">Telefone:</label>-->
+                <input required="" placeholder="Telefone" type="text" name="telefone" id="telefone" class="form-control"/>
+                <!--<label class="lbltext" for="telefone">Mensagem:</label>-->
+                <textarea required="" placeholder="Mensagem" name="campoinfo" id="infos" class="form-control" cols="20" rows="3"></textarea>
+                <button type="reset" class="btn btn-default">Limpar</button>
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
+        </div>
+    </footer>
+</div>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="bxslider/jquery.bxslider.js"></script>
+<script>
+    var slider = jQuery('.bxslider').bxSlider({
+        auto: true,
+        pause: 2500,
+        infiniteLoop: true,
+        speed: 1800,
+        responsive: true,
+        pager: false,
+        controls: false,
+        mode: 'fade'
+
+    });
+
+    jQuery('#slider-next').click(function(){
+        slider.goToNextSlide();
+        return false;
+    });
+
+    jQuery('#slider-count').click(function(){
+        var count = slider.getSlideCount();
+        alert('Slide count: ' + count);
+        return false;
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery("#inicio").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (0)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#servicos").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (890)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#equipe").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (1200)
+            }, 2000);
+        });
+    });
+
+    jQuery(document).ready(function() {
+        jQuery("#contato").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: (1500)
+            }, 2000);
+        });
+    });
+</script>
 </body>
 </html>
