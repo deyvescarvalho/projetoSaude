@@ -31,7 +31,11 @@ nav{
     /*background: blue;*/
     padding: 0 !important;
     margin: 0 auto !important;
+    width: 100%;
+}
 
+.navMenu{
+    width: 100%;
 }
 .titleEfeito{
     text-align: center;
@@ -118,10 +122,25 @@ a{
     -webkit-border-radius: 100px;
     border-radius: 30%;
     overflow: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+.geralFont{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2em;
+}
+
+.txtRight{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
 }
 
 .espService{
     overflow: hidden !important;
+    margin: 0;
+    padding: 0;
 }
 
 .subTitleService{
@@ -152,6 +171,12 @@ a{
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
+}
+
+.imgService{
+    /*border: 1px solid black;*/
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 

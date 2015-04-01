@@ -14,95 +14,104 @@
     <div class="row">
         <header class="col-md-12 cabecalho">
             <img class="logoClinica" src="img/slider/logo.png" alt=""/>
-            <nav class="col-md-12">
-                <ul class="ulMenu">
+            <nav class="col-md-12 navMenu">
+                <ul class="ulMenu col-md-12">
                     <li class="liMenu"><a id="inicio" class="linkMenu" href="#">INÍCIO</a></li>
                     <li class="liMenu"><a id="servicos" class="linkMenu" href="#">SERVIÇOS</a></li>
                     <li class="liMenu"><a id="equipe" class="linkMenu" href="#">EQUIPE</a></li>
                     <li class="liMenu"><a id="fotos" class="linkMenu" href="#">FOTOS</a></li>
                     <li class="liMenu"><a id="contato" class="linkMenu" href="#">CONTATO</a></li>
+                    <!--TODO CORRIGIR TRANSICOES PARA LINK NO OUT -->
                 </ul>
             </nav>
         </header>
+
+        <h1 class="titleEfeito">AQUI O SEU BEM-ESTAR, É NOSSA PRIORIDADE!</h1>
+        <section class="slider col-md-12">
+            <ul class="bxslider col-md-12">
+                <li class="col-md-12"><img class="imgsSliders" src="img/slider/bh_011.jpg" /></li>
+                <li class="col-md-12"><img class="imgsSliders" src="img/slider/slider1.jpg" /></li>
+                <li><img class="imgsSliders" src="img/slider/slider2.png" /></li>
+
+            </ul>
+        </section>
+        <h2 class="titleEfeito">CONHEÇA NOSSOS SERVIÇOS!</h2>
+        <section class="services col-md-12">
+            <article class="espService col-md-4">
+                <a class="linkFtoService" href="#">
+                    <div class="imgService col-md-12">
+                        <img class="imgFtoServices" src="img/services/cligeral.jpg" alt=""/>
+                    </div></a>
+                <a class="linkServico" href="#">
+                    <h2 class="col-md-12 subTitleService">CLÍNICO GERAL</h2>
+                </a>
+            </article>
+            <article class="espService col-md-4">
+                <a class="linkFtoService" href="#">
+                    <div class="imgService col-md-12">
+                        <img class="imgFtoServices" src="img/services/psicologo.jpg" alt="" />
+                    </div></a>
+                <a class="linkServico" href="#">
+                    <h2 class="col-md-12 subTitleService">PSICÓLOGO</h2>
+                </a>
+            </article>
+            <article class="espService col-md-4">
+                <a class="linkFtoService" href="#">
+                    <div class="imgService col-md-12">
+                        <img class="imgFtoServices" src="img/services/cardio.jpg" alt=""/>
+                    </div></a>
+                <a class="linkServico" href="#">
+                    <h2 class="col-md-12 subTitleService">CARDIOLOGISTA</h2>
+                </a>
+            </article>
+        </section>
+        <section class="equipe col-md-12">
+            <div class="fotoEquipe col-md-5">
+                <img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" alt=""/>
+            </div>
+            <article class="col-md-6 col-md-offset-1 description">
+                <h2 class="titleEfeito">SAIBA TUDO SOBRE NOSSA EQUIPE.</h2>
+                <p class="geralFont">
+                    Nossa equipe oferece sempre os melhores atendimentos e conforto ao paciente, lhe dando a atenção necessária para ajudar você.
+                    Mostrando sempre de forma todas as opções de tratamento ao nosso paciente em nossa
+                </p>
+                <p class="geralFont">
+                    Possuimos equipamentos modernos e tecnologia de última geração para oferecer aos pacientes, segurança, conforto, qualidade e êxito nos resultados.
+                </p>
+                <p class="geralFont">
+                    Fornecemos um serviço altamente confiável, contamos com uma equipe de profissionais devidamente habilitados e especializados para a prática das atividades. Atendendo assim de forma responsável e com pleno conhecimento em cada procedimento.
+                </p>
+
+                <a class="txtRight geralFont saibaMais" href="#">Clique aqui e saiba mais...</a>
+            </article>
+        </section>
+
+        <footer class="rodape col-md-12">
+            <div class="col-md-2 logo ">
+                <img class="logoRodape" src="img/slider/logo_rodape.png" alt=""/>
+            </div>
+            <div class="divEdenreco col-md-5 col-md-offset-1">
+                <h2>TELEFONE</h2>
+                <p>(64) 3631-0123</p>
+                <h2>ENDEREÇO</h2>
+                <p>Rua fulado de tal nº 1234 / Jataí-GO</p>
+            </div>
+            <div class="col-md-3 col-md-offset-1  formContato ">
+                <form action="">
+                    <!--<label class="lbltext" for="nome">Nome:</label>-->
+                    <input required="" placeholder="Nome" type="text" name="nome" id="nome" class="form-control"/>
+                    <!--<label class="lbltext" for="email">E-mail:</label>-->
+                    <input required="" placeholder="E-mail" type="email" name="email" id="email" class="form-control"/>
+                    <!--<label class="lbltext" for="telefone">Telefone:</label>-->
+                    <input required="" placeholder="Telefone" type="text" name="telefone" id="telefone" class="form-control"/>
+                    <!--<label class="lbltext" for="telefone">Mensagem:</label>-->
+                    <textarea required="" placeholder="Mensagem" name="campoinfo" id="infos" class="form-control" cols="20" rows="3"></textarea>
+                    <button type="reset" class="btn btn-default">Limpar</button>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>
+            </div>
+        </footer>
     </div>
-    <h1 class="titleEfeito">AQUI O SEU BEM-ESTAR, É NOSSA PRIORIDADE!</h1>
-    <section class="slider col-md-12">
-        <ul class="bxslider col-md-12">
-            <li class="col-md-12"><img class="imgsSliders" src="img/slider/bh_011.jpg" /></li>
-            <li class="col-md-12"><img class="imgsSliders" src="img/slider/slider1.jpg" /></li>
-            <li><img class="imgsSliders" src="img/slider/slider2.png" /></li>
-
-        </ul>
-    </section>
-    <h2 class="titleEfeito">CONHEÇA NOSSOS SERVIÇOS!</h2>
-    <section class="services col-md-12">
-        <article class="espService col-md-4">
-            <a class="linkFtoService" href="#">
-                <div class="imgService col-md-12">
-                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
-                </div></a>
-            <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">PSICÓLOGO</h2>
-            </a>
-        </article>
-        <article class="espService col-md-4">
-            <a class="linkFtoService" href="#">
-                <div class="imgService col-md-12">
-                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
-                </div></a>
-            <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">CLÍNICO GERAL</h2>
-            </a>
-        </article>
-        <article class="espService col-md-4">
-            <a class="linkFtoService" href="#">
-                <div class="imgService col-md-12">
-                    <img class="imgFtoServices" src="img/slider/thumb-atendimento-clinico-via-telefone-11-9-2014-12-58-54-747.jpg" alt=""/>
-                </div></a>
-            <a class="linkServico" href="#">
-                <h2 class="col-md-12 subTitleService">CARDIOLOGISTA</h2>
-            </a>
-        </article>
-    </section>
-    <section class="equipe col-md-12">
-        <div class="fotoEquipe col-md-5">
-            <img src="img/slider/satisfacao-e-compromisso-clinica-bias-fortes.jpg" alt=""/>
-        </div>
-        <article class="col-md-6 col-md-offset-1 description">
-            <h2 class="titleEfeito">SAIBA TUDO SOBRE NOSSA EQUIPE.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad doloremque repellendus.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolorem.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi assumenda, commodi corporis cum cumque, dolorem ducimus esse explicabo, fugiat iusto laborum libero molestias nihil nulla placeat qui. Cupiditate, similique.30</p>
-        </article>
-    </section>
-
-    <footer class="rodape col-md-12">
-        <div class="col-md-2 logo ">
-            <img class="logoRodape" src="img/slider/logo_rodape.png" alt=""/>
-        </div>
-        <div class="divEdenreco col-md-5 col-md-offset-1">
-            <h2>TELEFONE</h2>
-            <p>(64) 3631-0123</p>
-            <h2>ENDEREÇO</h2>
-            <p>Rua fulado de tal nº 1234 / Jataí-GO</p>
-        </div>
-        <div class="col-md-3 col-md-offset-1  formContato ">
-            <form action="">
-                <!--<label class="lbltext" for="nome">Nome:</label>-->
-                <input required="" placeholder="Nome" type="text" name="nome" id="nome" class="form-control"/>
-                <!--<label class="lbltext" for="email">E-mail:</label>-->
-                <input required="" placeholder="E-mail" type="email" name="email" id="email" class="form-control"/>
-                <!--<label class="lbltext" for="telefone">Telefone:</label>-->
-                <input required="" placeholder="Telefone" type="text" name="telefone" id="telefone" class="form-control"/>
-                <!--<label class="lbltext" for="telefone">Mensagem:</label>-->
-                <textarea required="" placeholder="Mensagem" name="campoinfo" id="infos" class="form-control" cols="20" rows="3"></textarea>
-                <button type="reset" class="btn btn-default">Limpar</button>
-                <button type="submit" class="btn btn-default">Enviar</button>
-            </form>
-        </div>
-    </footer>
 </div>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
@@ -144,7 +153,7 @@
     jQuery(document).ready(function() {
         jQuery("#servicos").click(function() {
             jQuery('html, body').animate({
-                scrollTop: (890)
+                scrollTop: (820)
             }, 2000);
         });
     });
